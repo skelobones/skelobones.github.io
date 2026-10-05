@@ -1,0 +1,7 @@
+sup {
+    font-size: 0.65em;       /* Adjusts the size of the 'nd' */
+    line-height: 0;          /* Prevents disruption to line spacing */
+    position: relative;      /* Allows manual shifting */
+    vertical-align: baseline;/* Locks it to the standard text line */
+    top: -0.5em;             /* Moves it up to look like a superscript */
+}

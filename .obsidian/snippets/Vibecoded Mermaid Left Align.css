@@ -1,0 +1,5 @@
+.mermaid svg .timeline-node text {
+    text-anchor: start !important;
+    transform-box: fill-box;
+    transform: translateX(-50%);
+}

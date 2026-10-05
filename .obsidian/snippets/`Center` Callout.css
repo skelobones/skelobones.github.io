@@ -1,0 +1,14 @@
+.callout[data-callout="center"],.callout[data-callout="centre"] {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.callout[data-callout="center"] .callout-content, .callout[data-callout="centre"] .callout-content {
+    margin: 0 auto;
+}
+.callout[data-callout="center"] .callout-title, .callout[data-callout="centre"] .callout-title {
+    display: none;
+}
+

@@ -112,19 +112,11 @@
     --callout-icon: var(--callout-icon-example);
   }
 
-  &[data-callout="quote"] {
+  &[data-callout="quote"], 
+  &[data-callout="cite"] {
     --color: var(--secondary);
     --border: var(--lightgray);
     --callout-icon: var(--callout-icon-quote);
-  }
-
-  /*My custom callouts here :)*/
-  &[data-callout="center"] {
-    text-align: center;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
   }
 
   /*Divider. Custom stuff above ^ */
@@ -158,7 +150,7 @@
   display: flex;
   align-items: flex-start;
   gap: 5px;
-  padding: 1rem 0;
+  padding: 0.8rem 0;
   color: var(--color);
 
   --icon-size: 18px;
@@ -195,13 +187,4 @@
   .callout-title-inner {
     font-weight: $semiBoldWeight;
   }
-}
-
-/* further custom yadda yadda; for Center func */
-.callout[data-callout="center"] .callout-title {
-    display: none;
-}
-
-.callout[data-callout="center"] .callout-content {
-    margin: 0 auto;
 }

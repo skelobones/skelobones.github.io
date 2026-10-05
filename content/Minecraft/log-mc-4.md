@@ -1,7 +1,7 @@
 ---
 title: "[4] Entering the Nether"
 tags:
-  - Minecraft
+  - minecraft
 publish: true
 publishDate: 2026-06-27
 aliases:

@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "status": "text",
+    "priority": "text",
+    "publishDate": "date",
+    "length": "number",
+    "hardware-stock-approx": "number",
+    "hardware-dimensions": "multitext",
+    "Description": "multitext"
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: "[1] Starting the World"
 tags:
-  - Minecraft
+  - minecraft
 publish: true
 publishDate: 2026-05-18
 aliases:

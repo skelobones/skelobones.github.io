@@ -1,9 +1,7 @@
 ---
-title: Example Title
+title: title
 tags:
-publish: 
+publish:
 publishDate:
-aliases:
-  - Example "aka"
 enableToc:
 ---

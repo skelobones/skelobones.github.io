@@ -1,7 +1,7 @@
 ---
 title: "[2] Building an Airship"
 tags:
-  - Minecraft
+  - minecraft
 publish: true
 publishDate: 2026-05-19
 aliases:
