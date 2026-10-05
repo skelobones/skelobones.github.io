@@ -37,8 +37,8 @@ configuration:
         darkgray: rgb(135, 133, 128)
         dark: rgb(206, 205, 195)
         secondary: rgb(206, 93, 151)
-        tertiary: rgb(58, 169, 159)
-        highlight: rgba(58, 169, 159,0.15)
+        tertiary: rgb(160, 47, 111)
+        highlight: rgba(160, 47, 111,0.15)
         textHighlight: rgba(206, 93, 151,0.1)
 plugins:
   - source: github:quartz-community/created-modified-date
