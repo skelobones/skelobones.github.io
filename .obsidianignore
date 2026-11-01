@@ -1,0 +1,6 @@
+docs/
+node_modules/
+Dockerfile.md
+CODE_OF_CONDUCT.md
+globals.d
+LICENSE.txt

@@ -1,0 +1,19 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "",
+  "baseFontSizeAction": false,
+  "theme": "obsidian",
+  "interfaceFontFamily": "Franklin Gothic,Noto Emoji,Unifont",
+  "textFontFamily": "Franklin Gothic Book,Noto Emoji,Helvetica,Arial,Unifont,Inter",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "Compact Callouts",
+    "More Callouts",
+    "`Center` Callout",
+    "Sharp Nodes",
+    "Vibecoded Mermaid Left Align",
+    "Superscript",
+    "copypastaMermaidCropSnippet"
+  ],
+  "monospaceFontFamily": "Unifont,JuliaMono,Noto Emoji,SGA Smooth,Source Code Pro,Lucida Console"
+}

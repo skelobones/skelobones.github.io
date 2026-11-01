@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "common": {
+    "language": "en",
+    "defaultZoomPercent": 100,
+    "largeFileWarningMb": 25
+  },
+  "docx": {
+    "defaultFitWidth": true,
+    "showOutlineByDefault": false,
+    "enableImagePreview": true
+  },
+  "pptx": {
+    "defaultFitWindow": true,
+    "showNavigationByDefault": true,
+    "showNotesByDefault": false
+  },
+  "xlsx": {
+    "defaultFitWidth": true
+  },
+  "readingStates": [
+    {
+      "path": "School/AIF/AIF PROGRESS CHECK 1 Task Sheet and scaffold.docx",
+      "mtime": 1786854364000,
+      "format": "docx",
+      "lastAccessed": 6480,
+      "position": {
+        "scrollLeft": 0,
+        "scrollTop": 1541.3333740234375
+      },
+      "zoom": {
+        "scale": 1,
+        "fit": true
+      },
+      "navigation": {
+        "panelVisible": false,
+        "collapsedIds": []
+      }
+    },
+    {
+      "path": "Settings/Imports/TLG3 Learner Workbook v4.0.docx",
+      "mtime": 1779067971000,
+      "format": "docx",
+      "lastAccessed": 6659,
+      "position": {
+        "scrollLeft": 0,
+        "scrollTop": 0
+      },
+      "zoom": {
+        "scale": 1,
+        "fit": true
+      },
+      "navigation": {
+        "panelVisible": true,
+        "collapsedIds": []
+      }
+    },
+    {
+      "path": "School/VET/TLG3 Learner Workbook v4.0.docx",
+      "mtime": 1779067971000,
+      "format": "docx",
+      "lastAccessed": 6744,
+      "position": {
+        "scrollLeft": 0,
+        "scrollTop": 0
+      },
+      "zoom": {
+        "scale": 1,
+        "fit": true
+      },
+      "navigation": {
+        "panelVisible": true,
+        "collapsedIds": []
+      }
+    },
+    {
+      "path": "School/VET/TLG4 Learner Workbook v4.0.docx",
+      "mtime": 1789340406004,
+      "format": "docx",
+      "lastAccessed": 7220,
+      "position": {
+        "scrollLeft": 0,
+        "scrollTop": 0
+      },
+      "zoom": {
+        "scale": 0.8,
+        "fit": true
+      },
+      "navigation": {
+        "panelVisible": false,
+        "collapsedIds": []
+      }
+    },
+    {
+      "path": "School/AIF/SMART GOALS planning.docx",
+      "mtime": 1782954553899,
+      "format": "docx",
+      "lastAccessed": 7464,
+      "position": {
+        "scrollLeft": 0,
+        "scrollTop": 819.3333129882812
+      },
+      "zoom": {
+        "scale": 1,
+        "fit": true
+      },
+      "navigation": {
+        "panelVisible": false,
+        "collapsedIds": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "excludeMode": "Full",
+  "obsidianIgnoreContent": "docs/\nnode_modules/\nDockerfile.md\nCODE_OF_CONDUCT.md\nglobals.d\nLICENSE.txt\n",
+  "shouldHideEmptyFolders": false,
+  "shouldIgnoreExcludedFiles": false,
+  "shouldIncludeGitIgnorePatterns": false
+}

@@ -1,7 +1,7 @@
 ---
 title: "[3] Innovations (C:Aeronautics)"
 tags:
-  - Minecraft
+  - minecraft
 publish: true
 publishDate: 2026-06-07
 aliases:

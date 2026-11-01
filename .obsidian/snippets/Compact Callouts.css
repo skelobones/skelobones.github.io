@@ -1,0 +1,8 @@
+div.callout {
+--callout-padding: var(--size-4-3) var(--size-4-4) var(--size-4-3) var(--size-4-4)
+
+}
+
+div.callout-content {
+    --p-spacing: 0.5em
+}

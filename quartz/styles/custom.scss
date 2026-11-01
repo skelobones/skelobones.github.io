@@ -8,18 +8,24 @@
     fill-opacity: 0.8;
 }
 
-
-
-.callout[data-callout="center"] {
+.callout[data-callout="center"],.callout[data-callout="centre"] {
     text-align: center;
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 0;
 }
-.callout[data-callout="center"] .callout-content {
+.callout[data-callout="center"] .callout-content, .callout[data-callout="centre"] .callout-content {
     margin: 0 auto;
 }
-.callout[data-callout="center"] .callout-title {
+.callout[data-callout="center"] .callout-title, .callout[data-callout="centre"] .callout-title {
     display: none;
+}
+
+sup {
+    font-size: 0.65em;       /* Adjusts the size of the 'nd' */
+    line-height: 0;          /* Prevents disruption to line spacing */
+    position: relative;      /* Allows manual shifting */
+    vertical-align: baseline;/* Locks it to the standard text line */
+    top: -0.5em;             /* Moves it up to look like a superscript */
 }
