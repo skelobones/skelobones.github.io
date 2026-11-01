@@ -2,7 +2,8 @@ name: Deploy Quartz site to GitHub Pages
  
 on:
   workflow_run:
-    workflows: ["kill-exif"] # google gemini? being HELPFUL? by the gods!
+    workflows: 
+      - build-and-deploy
     types:
       - completed
  
@@ -22,6 +23,10 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Fetch all history for git info
+      - name: burn exif data
+        uses: joshmenden/strip-image-metadata-action@v1
+        with:
+          path-regex: ./content/*
       - uses: actions/setup-node@v6
         with:
           node-version: 24

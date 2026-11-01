@@ -14,7 +14,10 @@ jobs:
         uses: joshmenden/strip-image-metadata-action@v1
         with:
           path-regex: ./content/*
-      
+      - name: checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       # ... deploy your code
 concurrency:
   group: "pages"
