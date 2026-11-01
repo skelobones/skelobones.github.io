@@ -1,11 +1,10 @@
 name: Deploy Quartz site to GitHub Pages
  
 on:
-  workflow_run:
-    workflows: 
-      - push
-    types:
-      - completed
+  push:
+    branches:
+      - main
+  workflow_dispatch:
  
 permissions:
   contents: read
@@ -23,10 +22,13 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Fetch all history for git info
-      - name: burn exif data
-        uses: joshmenden/strip-image-metadata-action@v1
-        with:
-          path-regex: ./content/*
+      - name: Install ImageMagick
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+      - name: Strip image metadata
+        run: |
+          find content -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.gif' -o -iname '*.webp' -o -iname '*.tif' -o -iname '*.tiff' \) -exec mogrify -strip {} +
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -61,7 +63,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
