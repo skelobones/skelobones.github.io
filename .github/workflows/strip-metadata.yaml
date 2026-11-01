@@ -1,4 +1,4 @@
-name: deploy-production
+name: kill-exif
 
 on:
   push:
@@ -7,17 +7,15 @@ on:
 
 jobs:
   deploy:
-    name: deploy my stuff
+    name: guhba babo dabbo 
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository code
-        uses: actions/checkout@v3
-
-      # ... whatever else you need
-
-      - name: Strip metadata from images
+      - name: burn exif data
         uses: joshmenden/strip-image-metadata-action@v1
         with:
           path-regex: ./content/*
       
       # ... deploy your code
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
