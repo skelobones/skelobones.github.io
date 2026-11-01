@@ -18,7 +18,7 @@ jobs:
 
       - uses: ICXCNIKAanon/metastrip@v1
         with:
-          path: 'content/*'
+          path: 'content/'
           commit: 'true'
 
       - name: Push changes
