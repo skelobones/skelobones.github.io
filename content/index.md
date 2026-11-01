@@ -4,7 +4,7 @@ tags:
 publish: true
 publishDate: 2026-07-13
 aliases:
-enableToc:
+enableToc: false
 ---
 Welcome to my blog!
 
