@@ -1,10 +1,9 @@
-
-name: Remove Image Metadata
+# .github/workflows/strip-metadata.yml
+name: Strip Image Metadata
 
 on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+  pull_request:
+    paths: ['**.jpg', '**.jpeg', '**.png', '**.webp']
 
 permissions:
   contents: write
@@ -14,11 +13,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - uses: ICXCNIKAanon/metastrip@v1
         with:
-          path: '.'
+          path: 'content/*'
           commit: 'true'
 
-      - name: Push cleaned files
+      - name: Push changes
         run: git push
