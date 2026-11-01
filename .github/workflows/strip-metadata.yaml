@@ -1,25 +1,23 @@
-# .github/workflows/strip-metadata.yml
-name: Strip Image Metadata
+name: deploy-production
 
 on:
-  pull_request:
-    paths: ['**.jpg', '**.jpeg', '**.png', '**.webp']
-
-permissions:
-  contents: write
+  push:
+    branches:
+      - main
 
 jobs:
-  strip-metadata:
+  deploy:
+    name: deploy my stuff
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
+      - name: Check out repository code
+        uses: actions/checkout@v3
 
-      - uses: ICXCNIKAanon/metastrip@v1
-        with:
-          path: 'content/'
-          commit: 'true'
+      # ... whatever else you need
 
-      - name: Push changes
-        run: git push
+      - name: Strip metadata from images
+        uses: joshmenden/strip-image-metadata-action@v1
+        with:
+          path-regex: ./content/*
+      
+      # ... deploy your code
