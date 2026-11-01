@@ -1,0 +1,24 @@
+
+name: Remove Image Metadata
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  strip-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ICXCNIKAanon/metastrip@v1
+        with:
+          path: '.'
+          commit: 'true'
+
+      - name: Push cleaned files
+        run: git push
